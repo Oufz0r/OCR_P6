@@ -1,13 +1,17 @@
-import {useState } from 'react';
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './css/app.css';
+// PAGES
 import Home from './pages/Home';
 import Lost from './pages/Lost';
-// import TechnoAdd from './pages/TechnoAdd';
+// COMPONENTS
+import Header from './components/Header';
+import Tag from './components/Tag';
+import Thumb from './components/Thumb';
+import Showbox from './components/Showbox';
+import Footer from './components/Footer';
 // import TechnoList from './pages/TechnoList';
 // import {TechnoList2} from './pages/TechnoList';
-import Header from './components/Header';
-// import Section from './components/Section';
 
 
 function App() {
@@ -20,10 +24,14 @@ function App() {
       {/* <Route path="/add" element={<TechnoAdd />} /> */}
       {/* <Route path="/list" element={<TechnoList />} /> */}
     </Routes>
+    {/* <Showbox title="Testeuh"><span>description de la location, villa luxueuse</span></Showbox>
+    <Tag>tag-name</Tag>
+    <Thumb>Test</Thumb> */}
     {/* <Section /> */}
     {/* <Home />
       <TechnoAdd />
       <TechnoList /> */}
+      <Footer />
     </>
   );
 }

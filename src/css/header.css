@@ -32,7 +32,7 @@
     color: #FF6060;
 }
 
-.active-link {
+.header .active-link {
     /* font-weight: bold; */
     /* color: black; */
     text-decoration: underline;

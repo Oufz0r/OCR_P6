@@ -1,7 +1,14 @@
+/* PAGES */
 @import './home.css';
+@import './lost.css';
+/* COMPONENTS */
 @import './header.css';
 @import './section.css';
-@import './lost.css';
+/* CSS */
+@import './tag.css';
+@import './thumb.css';
+@import './showbox.css';
+@import './footer.css';
 /* @import './menu.css'; */
 /* @import './technoadd.css'; */
 /* @import './technolist.css'; */
@@ -15,6 +22,8 @@
 html {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -22,7 +31,8 @@ body {
     flex-direction: column;
     width: 1440px;
     align-items: center;
-    padding: 2% 2%;
+    padding: 2% 2% 0 2%;
+    margin: 0;
 }
 
 #root {

@@ -1,0 +1,22 @@
+/* LES TAGS */
+.TAG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 25px;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1000px) {
+    .TAG {
+        font-size: 10px;
+        min-width: 84px;
+        padding: 4px 22px;
+        border-radius: 5px;
+    }
+}
