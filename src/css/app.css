@@ -1,0 +1,47 @@
+@import './home.css';
+@import './header.css';
+@import './section.css';
+@import './lost.css';
+/* @import './menu.css'; */
+/* @import './technoadd.css'; */
+/* @import './technolist.css'; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: center;
+    padding: 2% 2%;
+}
+
+#root {
+    /* width: 1440px; */
+    width: 100%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    body {
+        width: 100%;
+        padding: 5% 5% 0 5%;
+    }
+
+    #root {
+        width: 100%;
+    }
+}
