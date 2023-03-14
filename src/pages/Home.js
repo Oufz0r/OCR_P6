@@ -1,4 +1,5 @@
-import Section from '../components/Section';
+// import Section from '../components/Banner';
+import Banner from '../components/Banner';
 import Tag from '../components/Tag';
 import Thumb from '../components/Thumb';
 import Showbox from '../components/Showbox';
@@ -6,7 +7,10 @@ import Showbox from '../components/Showbox';
 export default function Home() {
     return (
         <div className="home">
-            <Section />
+            <Banner url="bannerBG.png">
+                <span>Chez vous,&nbsp;</span>
+                <span>partout et ailleurs</span>
+            </Banner>
             {/* <Galerie /> */}
 
             <Showbox title="Testeuh"><span>description de la location, villa luxueuse</span></Showbox>

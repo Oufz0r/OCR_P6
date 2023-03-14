@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './css/app.css';
 // PAGES
@@ -6,9 +6,9 @@ import Home from './pages/Home';
 import Lost from './pages/Lost';
 // COMPONENTS
 import Header from './components/Header';
-import Tag from './components/Tag';
-import Thumb from './components/Thumb';
-import Showbox from './components/Showbox';
+// import Tag from './components/Tag';
+// import Thumb from './components/Thumb';
+// import Showbox from './components/Showbox';
 import Footer from './components/Footer';
 // import TechnoList from './pages/TechnoList';
 // import {TechnoList2} from './pages/TechnoList';

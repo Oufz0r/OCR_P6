@@ -3,16 +3,13 @@
 @import './lost.css';
 /* COMPONENTS */
 @import './header.css';
-@import './section.css';
+@import './banner.css';
 /* CSS */
 @import './tag.css';
 @import './thumb.css';
 @import './showbox.css';
 @import './footer.css';
-/* @import './menu.css'; */
-/* @import './technoadd.css'; */
-/* @import './technolist.css'; */
-
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 * {
