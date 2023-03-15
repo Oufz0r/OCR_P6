@@ -4,9 +4,9 @@
 /* COMPONENTS */
 @import './header.css';
 @import './banner.css';
-/* CSS */
 @import './tag.css';
 @import './thumb.css';
+@import './thumbbox.css';
 @import './showbox.css';
 @import './footer.css';
 /* FONTS */

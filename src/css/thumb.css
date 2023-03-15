@@ -6,6 +6,9 @@
     background-color: #FF6060;
     border-radius: 10px;
     overflow: hidden;
+    margin: 25px;
+    margin-right: auto;
+    background-size: cover;
 }
 
 .Thumb-ghost {
@@ -25,9 +28,13 @@
     font-weight: 400;
 }
 
+
+
 @media screen and (max-width: 1000px) {
     .Thumb {
         width: 100%;
+        margin: 10px 0;
+        /* margin-right: 0; */
         /* vérifier le height avec plusieurs Thumbs */
         /* height: 100%;  */
     }
