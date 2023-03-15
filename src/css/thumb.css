@@ -7,7 +7,7 @@
     border-radius: 10px;
     overflow: hidden;
     margin: 25px;
-    margin-right: auto;
+    /* margin-right: auto; */
     background-size: cover;
 }
 
@@ -30,7 +30,7 @@
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1440px) {
     .Thumb {
         width: 100%;
         margin: 10px 0;

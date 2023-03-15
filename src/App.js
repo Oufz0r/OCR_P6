@@ -18,21 +18,23 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-    <Header />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="*" element={<Lost />} />
-      {/* <Route path="/add" element={<TechnoAdd />} /> */}
-      {/* <Route path="/list" element={<TechnoList />} /> */}
-    </Routes>
-    {/* <Showbox title="Testeuh"><span>description de la location, villa luxueuse</span></Showbox>
-    <Tag>tag-name</Tag>
-    <Thumb>Test</Thumb> */}
-    {/* <Section /> */}
-    {/* <Home />
-      <TechnoAdd />
-      <TechnoList /> */}
+      <div className="bodyContainer">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Lost />} />
+          {/* <Route path="/add" element={<TechnoAdd />} /> */}
+          {/* <Route path="/list" element={<TechnoList />} /> */}
+        </Routes>
+        {/* <Showbox title="Testeuh"><span>description de la location, villa luxueuse</span></Showbox>
+        <Tag>tag-name</Tag>
+        <Thumb>Test</Thumb> */}
+        {/* <Section /> */}
+        {/* <Home />
+          <TechnoAdd />
+          <TechnoList /> */}
+      </div>
       <Footer />
     </>
   );

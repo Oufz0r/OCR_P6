@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className="about">
             <Banner url="bannerAbout.png" />
-
+            <br />
             <Showboxlong title="Fiabilité">
                 <span>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements,
                 et toutes les informations sont régulièrement vérifiées  par nos équipes.</span>
