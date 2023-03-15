@@ -1,66 +1,56 @@
 /* Showbox avec affichage caché, se développe au clique. */
-.showbox {
+.showboxlong {
     position: relative;
     width: fit-content;
     height: fit-content;
-    min-width: 580px;
+    width: 100%;
     max-width: 1020px;
     margin: 15px 0;
 }
 
-.showbox-up {
+.showboxlong-up {
     display: flex;
     justify-content: space-between;
     padding: 13px 20px;
     background-color: #FF6060;
     color: white;
     border-radius: 10px;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
     z-index: 0;
     cursor: pointer;
     user-select: none;
 }
 
-.showbox-down {
+.showboxlong-down {
     position: relative;
     display: flex;
     transition: 0.5s;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #F6F6F6;
+    background-color: #F7F7F7;
     color: #FF6060;
     border-radius: 0 0 10px 10px;
     top: -10px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;
     z-index: -1;
     padding: 50px 20px 40px 20px;
     text-align: justify;
 }
 
-.showbox-down ul {
+.showboxlong-down ul {
     margin: 0;
     padding-inline-start: 0;
 }
-.showbox-down li {
+.showboxlong-down li {
     list-style: none;
 }
 
-.showbox-arrow {
-    transform: rotate(180deg);
-}
-
-.arrow-rotate {
-    transform: rotate(0deg);
-    /* transition: 0.3s; */
-}
-
-
 
 @media screen and (max-width: 1000px) {
-    .showbox {
+    .showboxlong {
         width: 100%;
         min-width: 100px;
         max-width: 100%;

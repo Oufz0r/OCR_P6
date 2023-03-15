@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './css/app.css';
 // PAGES
 import Home from './pages/Home';
+import About from './pages/About';
 import Lost from './pages/Lost';
 // COMPONENTS
 import Header from './components/Header';
@@ -20,6 +21,7 @@ function App() {
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
       <Route path="*" element={<Lost />} />
       {/* <Route path="/add" element={<TechnoAdd />} /> */}
       {/* <Route path="/list" element={<TechnoList />} /> */}

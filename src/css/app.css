@@ -1,5 +1,6 @@
 /* PAGES */
 @import './home.css';
+@import './about.css';
 @import './lost.css';
 /* COMPONENTS */
 @import './header.css';
@@ -8,6 +9,7 @@
 @import './thumb.css';
 @import './thumbbox.css';
 @import './showbox.css';
+@import './showboxlong.css';
 @import './footer.css';
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
