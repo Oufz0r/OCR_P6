@@ -1,15 +1,16 @@
 /* PAGES */
 @import './home.css';
 @import './about.css';
+@import './location.css';
 @import './lost.css';
 /* COMPONENTS */
 @import './header.css';
 @import './banner.css';
 @import './tag.css';
-@import './thumb.css';
-@import './thumbbox.css';
-@import './showbox.css';
-@import './showboxlong.css';
+@import './card.css';
+@import './cardbox.css';
+@import './collapse.css';
+@import './carrousel.css';
 @import './footer.css';
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');

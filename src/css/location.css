@@ -1,0 +1,23 @@
+.location {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    margin-top: 25px; /* 50px */
+    height: fit-content;
+    color: #FF6060;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+    .location {
+        margin-top: 15px;
+    }
+}

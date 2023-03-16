@@ -1,0 +1,25 @@
+.Carrousel {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+}
+
+.arrowBack {
+    position: absolute;
+    left: 25px;
+    top: 156px;
+    cursor: pointer;
+}
+
+.arrowForward {
+    position: absolute;
+    right: 25px;
+    top: 156px;
+    cursor: pointer;
+}
+
+
+/* mobile media */

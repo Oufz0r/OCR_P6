@@ -10,13 +10,13 @@ export default function Showbox(props) {
 
     return (
         <>
-            <div className="showboxlong">
-                <div className="showboxlong-up" onClick={toggleShowBox}>
-                    <div className="showboxlong-title">{ props.title }</div>
-                    <div className={`showbox-arrow ${showBox ? 'arrow-rotate' : ''}`}><img src={ arrow } alt="arrow" /></div>
+            <div className="collapse">
+                <div className="collapse-up" onClick={toggleShowBox}>
+                    <div className="collapse-title">{ props.title }</div>
+                    <div className={`collapse-arrow ${showBox ? 'arrow-rotate' : ''}`}><img src={ arrow } alt="arrow" /></div>
                 </div>
                 {showBox && (
-                <div className="showboxlong-down">
+                <div className="collapse-down">
                     {props.children}
                 </div>
                 )}
