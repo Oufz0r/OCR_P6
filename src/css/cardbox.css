@@ -1,15 +1,18 @@
 .cardBox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
     background-color: #F6F6F6;
     width: 100%;
     height: fit-content;
     border-radius: 25px;
     margin: 40px 0;
     padding: 50px;
-    justify-content: space-around;
-    align-items: flex-start;
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
 }
 
 
@@ -19,5 +22,6 @@
         padding: 0;
         margin: 0;
         background: none;
+        grid-template-columns: repeat(1, 1fr);
     }
 }

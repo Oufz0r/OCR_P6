@@ -14,12 +14,4 @@ export default function LocationsGet(props) {
     useEffect(() => {
         props.onDataReceived(data);
     }, [data, props]);
-
-    // return (
-    //     <>
-    //         {data.map((item) => (
-    //             <Card key={item.id} id={item.id} url={item.cover}>{ item.title }</Card>
-    //         ))}
-    //     </>
-    // );
 }

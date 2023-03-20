@@ -1,0 +1,109 @@
+.Content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-header {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.content-header-left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.content-header-right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: flex-end;
+}
+
+.content-header-right .location-host img {
+    width: 64px;
+    height: 64px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.content-header h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+.location-host {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.location-note {
+    margin-top: 25px;
+}
+
+.content-header-right .location-note .star {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.content-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* espace entre les éléments sauf le dernier */
+.content-body > *:not(:last-child) {
+    margin-right: 80px;
+}
+
+.Content span {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.Content .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.Content .TAG {
+    margin:0 10px 10px 0;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    .Content h1 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .Content span {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}

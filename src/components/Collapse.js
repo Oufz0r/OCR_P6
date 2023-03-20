@@ -2,20 +2,20 @@ import React, { useState } from 'react';
 import arrow from '../arrow.png';
 
 export default function Showbox(props) {
-    const [showBox, setShowBox] = useState(false);
+    const [collapse, setCollapse] = useState(false);
 
-    const toggleShowBox = () => {
-        setShowBox(!showBox);
+    const toggleCollapse = () => {
+        setCollapse(!collapse);
     };
 
     return (
         <>
             <div className="collapse">
-                <div className="collapse-up" onClick={toggleShowBox}>
+                <div className="collapse-up" onClick={toggleCollapse}>
                     <div className="collapse-title">{ props.title }</div>
-                    <div className={`collapse-arrow ${showBox ? 'arrow-rotate' : ''}`}><img src={ arrow } alt="arrow" /></div>
+                    <div className={`collapse-arrow ${collapse ? 'arrow-rotate' : ''}`}><img src={ arrow } alt="arrow" /></div>
                 </div>
-                {showBox && (
+                {collapse && (
                 <div className="collapse-down">
                     {props.children}
                 </div>

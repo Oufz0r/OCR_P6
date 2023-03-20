@@ -10,13 +10,15 @@
     font-size: 14px;
     font-weight: 500;
     width: fit-content;
+    margin:0 10px 10px 0;
 }
 
 @media screen and (max-width: 1000px) {
     .TAG {
         font-size: 10px;
         min-width: 84px;
-        padding: 4px 22px;
+        padding: 3px 10px;
         border-radius: 5px;
+        text-align: center;
     }
 }

@@ -5,21 +5,24 @@
     border-radius: 25px;
     background-position: center;
     background-size: cover;
+    /* ADD pour test */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px;
 }
 
-.arrowBack {
-    position: absolute;
-    left: 25px;
-    top: 156px;
-    cursor: pointer;
-}
 
-.arrowForward {
-    position: absolute;
-    right: 25px;
-    top: 156px;
+.arrow {
+    width: 46px;
+    height: 79px;
     cursor: pointer;
 }
 
 
 /* mobile media */
+@media screen and (max-width: 1440px) {
+    .Carrousel {
+        height: 255px;
+    }
+}

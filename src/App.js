@@ -21,7 +21,7 @@ function App() {
   const [logements, setLogements] = useState([]);
 
   function handleDataReceived(data) {
-      setLogements(data);
+    setLogements(data);
   }
 
   return (
@@ -32,23 +32,12 @@ function App() {
         <Routes>
           {/* Pour chaque entrée (fichier JSON) on crée une Route */}
           {logements.map((item) => (
-              <Route key={item.id} path={`/logement/${item.id}`} element={<Location data={item.id} />} />
+            <Route key={item.id} path={`/logement/${item.id}`} element={<Location data={item.id} />} />
           ))}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/logement/:id" element={<Location />} /> */}
-          <Route path="/logement/*" element={<Lost />} />
           <Route path="*" element={<Lost />} />
-          {/* <Route path="/add" element={<TechnoAdd />} /> */}
-          {/* <Route path="/list" element={<TechnoList />} /> */}
         </Routes>
-        {/* <Showbox title="Testeuh"><span>description de la location, villa luxueuse</span></Showbox>
-        <Tag>tag-name</Tag>
-        <Thumb>Test</Thumb> */}
-        {/* <Section /> */}
-        {/* <Home />
-          <TechnoAdd />
-          <TechnoList /> */}
       </div>
       <Footer />
     </>
