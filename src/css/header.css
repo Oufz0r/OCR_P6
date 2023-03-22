@@ -54,12 +54,18 @@
     }
 
     .header nav {
-        width: 190px;
+        /* width: 190px; */
+        width: fit-content;
     }
 
     .header ul {
+        padding: 0;
         font-size: 12px;
         text-transform : uppercase;
         font-weight: 500;
+    }
+
+    .header li {
+        margin-left: 10px;
     }
 }

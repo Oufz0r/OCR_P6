@@ -19,10 +19,41 @@
     cursor: pointer;
 }
 
+.pictureCount {
+    position: absolute;
+    width: 100%;
+    bottom: 25px;
+    left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.elementHide {
+    display: none;
+}
+
+
+
+
 
 /* mobile media */
 @media screen and (max-width: 1440px) {
     .Carrousel {
         height: 255px;
+        padding: 5px;
+    }
+
+    .arrow {
+        width: 12px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .pictureCount {
+        display: none;
     }
 }

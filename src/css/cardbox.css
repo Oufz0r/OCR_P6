@@ -20,7 +20,7 @@
 @media screen and (max-width: 1440px) {
     .cardBox {
         padding: 0;
-        margin: 0;
+        margin: 10px 0 0 0;
         background: none;
         grid-template-columns: repeat(1, 1fr);
     }

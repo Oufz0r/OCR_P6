@@ -40,7 +40,7 @@ body {
 }
 
 .bodyContainer {
-    width: 1440px;
+    width: 1240px;
     display: flex;
     flex-direction: column;
     align-items: center;

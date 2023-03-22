@@ -36,16 +36,17 @@
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
-    letter-spacing: 0em;
+    /* letter-spacing: 0em; */
     text-align: left;
     margin: 0;
 }
 
 .location-host {
-    height: 64px;
     display: flex;
     align-items: center;
     text-align: right;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .location-note {
@@ -60,6 +61,7 @@
 
 .content-body {
     width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
 }
@@ -74,14 +76,13 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0em;
     text-align: left;
 }
 
 .Content .tags {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .Content .TAG {
@@ -90,20 +91,76 @@
 
 
 
+
+
+
+
+
+
 @media screen and (max-width: 1440px) {
     .Content h1 {
         font-size: 18px;
         font-weight: 500;
         line-height: 26px;
-        letter-spacing: 0em;
-        text-align: left;
+        margin-bottom: 5px;
     }
 
     .Content span {
         font-size: 14px;
-        font-weight: 500;
         line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
+    }
+
+    .content-header {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .content-header-left {
+        width: 100%;
+    }
+
+    .content-header-right {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .location-host {
+        order: 2;
+        font-size: 12px;
+    }
+
+    .location-note {
+        order: 1;
+        margin: 0;
+    }
+
+    .content-header-right .location-note .star {
+        width: 15px;
+        height: 15px;
+        margin-left: 0px;
+    }
+
+    .content-header-right .location-note .star:not(:first-child) {
+        margin-left: 5px;
+    }
+
+    .content-header-right .location-host img {
+        width: 32px;
+        height: 32px;
+        margin-left: 10px;
+    }
+
+    .content-body {
+        flex-direction: column;
+    }
+    
+    /* espace entre les éléments sauf le dernier */
+    .content-body > *:not(:last-child) {
+        margin-right: 0;
     }
 }

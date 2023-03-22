@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import arrowBack from '../arrowBack.png';
-import arrowForward from '../arrowForward.png';
+// import arrowBack from '../arrowBack.png';
+// import arrowForward from '../arrowForward.png';
 // import image from './bannerBG.png';
 
 import LocationsGet from '../components/LocationsGet';
@@ -18,11 +18,21 @@ export default function Carrousel(props) {
     let nbPictures;
 
     function pictureBack() {
-        setIndex((index - 1 + nbPictures) % nbPictures);
+        if(index === 0) {
+            setIndex(nbPictures - 1);
+        } else {
+            setIndex(index - 1);
+        }
+        // setIndex((index - 1 + nbPictures) % nbPictures);
     }
 
     function pictureForward() {
-        setIndex((index + 1) % nbPictures);
+        if(index === nbPictures-1) {
+            setIndex(nbPictures - nbPictures);
+        } else {
+            setIndex(index + 1);
+        }
+        // setIndex((index + 1) % nbPictures);
     }
 
     return (
@@ -33,8 +43,11 @@ export default function Carrousel(props) {
                 (
                     nbPictures = logement.pictures.length,
                         <div key={ logement.id } className="Carrousel" style={{ backgroundImage: `url(${ logement.pictures[index] })` }}>
-                            <img src={ arrowBack } className="arrowBack arrow" onClick={ pictureBack } alt="Flèche précédente" />
-                            <img src={ arrowForward } className="arrowForward arrow" onClick={ pictureForward } alt="Flèche suivante" />
+                            {/* <img src={ arrowBack } className={`arrowBack arrow ${nbPictures < 2 ? 'elementHide' : '' }`} onClick={ pictureBack } alt="Flèche précédente" />
+                            <img src={ arrowForward } className={`arrowForward arrow ${nbPictures < 2 ? 'elementHide' : '' }`} onClick={ pictureForward } alt="Flèche suivante" /> */}
+                            <img src="/images/arrowBack.png" className={`arrowBack arrow ${nbPictures < 2 ? 'elementHide' : '' }`} onClick={ pictureBack } alt="Flèche précédente" />
+                            <img src="/images/arrowForward.png" className={`arrowForward arrow ${nbPictures < 2 ? 'elementHide' : '' }`} onClick={ pictureForward } alt="Flèche suivante" />
+                            <div className={`pictureCount ${nbPictures < 2 ? 'elementHide' : '' }`}>{ index+1 + '/' + nbPictures}</div>
                         </div>
                 ) : null
             ))}
