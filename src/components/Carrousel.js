@@ -28,7 +28,7 @@ export default function Carrousel(props) {
 
     function pictureForward() {
         if(index === nbPictures-1) {
-            setIndex(nbPictures - nbPictures);
+            setIndex(0);
         } else {
             setIndex(index + 1);
         }

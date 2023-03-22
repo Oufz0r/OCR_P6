@@ -9,10 +9,7 @@ import Location from './pages/Location';
 import Lost from './pages/Lost';
 // COMPONENTS
 import Header from './components/Header';
-// import Tag from './components/Tag';
 import Footer from './components/Footer';
-// import TechnoList from './pages/TechnoList';
-// import {TechnoList2} from './pages/TechnoList';
 import LocationsGet from './components/LocationsGet';
 
 
