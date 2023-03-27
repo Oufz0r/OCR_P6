@@ -4,18 +4,18 @@ import React, { useState } from "react";
 // import arrowForward from '../arrowForward.png';
 // import image from './bannerBG.png';
 
-import LocationsGet from '../components/LocationsGet';
+// import LocationsGet from '../components/LocationsGet';
 // import Location from '../pages/Location';
 
 export default function Carrousel(props) {
-    const [logements, setLogements] = useState([]);
+    // const [logements, setLogements] = useState([]);
     const [index, setIndex] = useState(0);
 
-    function handleDataReceived(data) {
-        setLogements(data);
-    }
+    // function handleDataReceived(data) {
+    //     setLogements(data);
+    // }
 
-    let nbPictures;
+    // let nbPictures;
 
     function pictureBack() {
         if(index === 0) {
@@ -35,13 +35,15 @@ export default function Carrousel(props) {
         // setIndex((index + 1) % nbPictures);
     }
 
+    const logement = props.logement;
+    const nbPictures = logement.pictures.length;
+
     return (
         <>
-            <LocationsGet onDataReceived={handleDataReceived} />
+            {/* <LocationsGet onDataReceived={handleDataReceived} />
             {logements.map((logement) => (
                 logement.id ===  props.id ?
-                (
-                    nbPictures = logement.pictures.length,
+                ( */}
                         <div key={ logement.id } className="Carrousel" style={{ backgroundImage: `url(${ logement.pictures[index] })` }}>
                             {/* <img src={ arrowBack } className={`arrowBack arrow ${nbPictures < 2 ? 'elementHide' : '' }`} onClick={ pictureBack } alt="Flèche précédente" />
                             <img src={ arrowForward } className={`arrowForward arrow ${nbPictures < 2 ? 'elementHide' : '' }`} onClick={ pictureForward } alt="Flèche suivante" /> */}
@@ -49,8 +51,8 @@ export default function Carrousel(props) {
                             <img src="/images/arrowForward.png" className={`arrowForward arrow ${nbPictures < 2 ? 'elementHide' : '' }`} onClick={ pictureForward } alt="Flèche suivante" />
                             <div className={`pictureCount ${nbPictures < 2 ? 'elementHide' : '' }`}>{ index+1 + '/' + nbPictures}</div>
                         </div>
-                ) : null
-            ))}
+                {/* ) : null
+            ))} */}
         </>
     )
 }

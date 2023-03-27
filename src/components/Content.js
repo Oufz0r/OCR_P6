@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 // imports composants
-import LocationsGet from '../components/LocationsGet';
+// import LocationsGet from '../components/LocationsGet';
 import Tag from '../components/Tag';
 import Collapse from '../components/Collapse';
 // imports images
@@ -9,12 +9,12 @@ import Collapse from '../components/Collapse';
 
 
 export default function Carrousel(props) {
-    const [logements, setLogements] = useState([]);
+    // const [logements, setLogements] = useState([]);
     // const [score, setScore] = useState(0);
 
-    function handleDataReceived(data) {
-        setLogements(data);
-    }
+    // function handleDataReceived(data) {
+    //     setLogements(data);
+    // }
 
     let stars = [];
 
@@ -37,14 +37,16 @@ export default function Carrousel(props) {
         }
     }
 
+    const logement = props.logement;
+
 
     return (
         <>
-            <LocationsGet onDataReceived={handleDataReceived} />
+            {/* <LocationsGet onDataReceived={handleDataReceived} />
             {logements.map((logement) => (
                 // nbTags = logement.tags.length,
                 logement.id ===  props.id ?
-                (
+                ( */}
                     <div key={ logement.id } className="Content">
                         <div className="content-header">
                             <div className="content-header-left">
@@ -91,8 +93,8 @@ export default function Carrousel(props) {
                             </Collapse>
                         </div>
                     </div>
-                ) : null
-            ))}
+                {/* ) : null
+            ))} */}
         </>
     )
 }

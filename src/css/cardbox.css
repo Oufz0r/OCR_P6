@@ -3,16 +3,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
     background-color: #F6F6F6;
     width: 100%;
     height: fit-content;
     border-radius: 25px;
     margin: 40px 0;
-    padding: 40px 40px;
-    /* justify-content: space-around; */
-    /* align-items: flex-start; */
+    padding: 30px 20px;
 }
 
 

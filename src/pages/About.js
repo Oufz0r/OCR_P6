@@ -6,7 +6,7 @@ import Collapse from '../components/Collapse';
 export default function About() {
     return (
         <div className="about">
-            <Banner url="bannerAbout.png" />
+            <Banner url="bannerAbout.webp" />
             <br />
             {/* l'attribut "look" permet d'ajouter une classe */}
             <Collapse title="Fiabilité" look="collapse-about-style">

@@ -13,7 +13,7 @@ export default function Home() {
 
     return (
         <div className="home">
-            <Banner url="bannerHome.png">
+            <Banner url="bannerHome.webp">
                 <span>Chez vous,&nbsp;</span>
                 <span>partout et ailleurs</span>
             </Banner>
