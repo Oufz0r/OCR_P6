@@ -18,7 +18,7 @@ function App() {
       <div className="bodyContainer">
         <Header />
         <Routes>
-          <Route path="/logement/:locationId" element={<Location />} />
+          <Route path="/location/:locationId" element={<Location />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Lost />} />

@@ -3,9 +3,6 @@
 // import LocationsGet from '../components/LocationsGet';
 import Tag from '../components/Tag';
 import Collapse from '../components/Collapse';
-// imports images
-// import starFull from '../starFull.png';
-// import starEmpty from '../starEmpty.png';
 
 
 export default function Carrousel(props) {

@@ -33,8 +33,8 @@ export default function Location(props) {
             {
                 return (
                     <div className="location">
-                        <Carrousel logement={ logement } id={ locationId } />
-                        <Content logement={ logement } id={ locationId }/>
+                        <Carrousel logement={ logement } />
+                        <Content logement={ logement } />
                     </div>
                 )
             }
