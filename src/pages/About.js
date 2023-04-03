@@ -1,6 +1,4 @@
-// import Section from '../components/Banner';
 import Banner from '../components/Banner';
-// import Showboxlong from '../components/Showboxlong';
 import Collapse from '../components/Collapse';
 
 export default function About() {

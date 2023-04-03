@@ -4,14 +4,12 @@
     align-items: center;
     justify-content: space-around;
     color: #FF6060;
-    /* color: #608aff; */
     width: 100%;
     height: 70vh;
 }
 
 .error-slot {
     width: 100%;
-    /* height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +25,6 @@
     font-size: 36px;
     font-weight: 500;
     text-align: center;
-    /* margin-bottom: 200px; */
 }
 
 .box404 a {
@@ -43,7 +40,6 @@
 @media screen and (max-width: 1440px) {
     .box404 {
         height: 70vh;
-        /* justify-content: space-around; */
     }
     .big-text {
         font-size: 96px;
@@ -53,6 +49,5 @@
         font-size: 18px;
         width: 100%;
         text-align: center;
-        /* margin-bottom: 150px; */
     }
 }

@@ -64,7 +64,6 @@
 
 .arrow-rotate {
     transform: rotate(0deg);
-    /* transition: 0.3s; */
 }
 
 /* création de la classe secondaire pour mise en forme sur la page About */
@@ -113,8 +112,6 @@
         width: 15px;
         height: 9px;
     }
-
-    /* création de la classe secondaire pour mise en forme sur la page About */
 
     .collapse-about-style .collapse-title {
         font-size: 13px;

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import Card from './Card';
 
 export default function LocationsGet(props) {
     const [data, setData] = useState([]);

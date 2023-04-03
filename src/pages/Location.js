@@ -15,16 +15,10 @@ export default function Location(props) {
         setLogements(data);
     }
 
-    // On récupère l'id de la location
-    // const locationId = props.data;
+    // On récupère l'id de la location dans l'url
     const { locationId } = useParams();
 
-    // let index = 0;
-    // let nbPictures;
 
-    // return (
-    //     <Lost />
-    // )
     if(logements.length > 0)
     {
         for(let logement of logements)

@@ -1,11 +1,10 @@
 import { NavLink } from 'react-router-dom';
-import logo from '../logo.png';
 
 export default function Menu() {
     return (
         <div className="header">
             <div>
-                <img src={logo} alt="Logo" className="logo" />
+                <img src="/images/logo.png" alt="Logo" className="logo" />
             </div>
             <nav>
                 <ul>

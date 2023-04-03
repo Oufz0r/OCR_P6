@@ -2,13 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 1440px; */
     width: 100%;
 }
 
 .header nav {
     width: 310px;
-    /* height: 35px; */
 }
 
 .header ul {
@@ -16,7 +14,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* color: #FF6060; */
     font-size: 24px;
     font-weight: 500;
 }
@@ -24,7 +21,6 @@
 .header li {
     cursor: pointer;
     text-align: right;
-    /* min-width: 66px; */
 }
 
 .header a {
@@ -33,8 +29,6 @@
 }
 
 .header .active-link {
-    /* font-weight: bold; */
-    /* color: black; */
     text-decoration: underline;
 }
 
