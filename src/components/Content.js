@@ -26,7 +26,6 @@ export default function Content(props) {
 
 
     return (
-        <>
                     <div key={ logement.id } className="Content">
                         <div className="content-header">
                             <div className="content-header-left">
@@ -73,6 +72,5 @@ export default function Content(props) {
                             </Collapse>
                         </div>
                     </div>
-        </>
     )
 }

@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <div className="home">
             <Banner url="bannerHome.webp">
-                <span>Chez vous,&nbsp;</span>
+                <span>Chez vous,</span>
                 <span>partout et ailleurs</span>
             </Banner>
 

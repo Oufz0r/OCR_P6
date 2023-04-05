@@ -50,14 +50,13 @@
 
     .banner-image {
         background-size: cover;
-        background-position: center;
     }
 
     .banner-texte {
         flex-direction: column;
         align-items: flex-start;
         font-size: 24px;
-        width: 72%;
+        /* width: 72%; */
         padding: 0 0 0 16px;
     }
 }
