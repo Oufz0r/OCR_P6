@@ -4,8 +4,8 @@ export default function Thumb(props) {
     }
     return (
         <div className="Card" data-id={ props.id } onClick={() => goTo(props.id)} style={{backgroundImage: `url(${props.url})`}}>
-                <div className="Card-ghost"></div>
-                <span>{ props.children }</span>
-            </div>
+            <div className="Card-ghost"></div>
+            <span>{ props.children }</span>
+        </div>
     )
 }
