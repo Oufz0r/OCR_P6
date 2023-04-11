@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Showbox(props) {
+export default function Collapse(props) {
     const [collapse, setCollapse] = useState(false);
 
     const toggleCollapse = () => {

@@ -22,6 +22,12 @@ export default function Carrousel(props) {
     const logement = props.logement;
     const nbPictures = logement.pictures.length;
 
+    // Préchargement des images
+    for(let i = 0; i < logement.pictures.length; i++) {
+        let images = new Image();
+        images.src = logement.pictures[i];
+    }
+
     return (
         <>
                         <div key={ logement.id } className="Carrousel" style={{ backgroundImage: `url(${ logement.pictures[index] })` }}>
